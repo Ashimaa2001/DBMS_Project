@@ -32,7 +32,7 @@ CREATE TABLE `hostel` (
   `Num_2S_Rooms` int DEFAULT NULL,
   `Caretaker` varchar(20) DEFAULT NULL,
   `Warden` varchar(20) DEFAULT NULL,
-  `Contact` int DEFAULT NULL,
+  `Contact` varchar(30) DEFAULT NULL,
   `Email_id` varchar(20) DEFAULT NULL,
   PRIMARY KEY (`Hostel_id`),
   UNIQUE KEY `Hostel_Name` (`Hostel_Name`),
@@ -46,6 +46,7 @@ CREATE TABLE `hostel` (
 
 LOCK TABLES `hostel` WRITE;
 /*!40000 ALTER TABLE `hostel` DISABLE KEYS */;
+INSERT INTO `hostel` VALUES (101,' Hostel A','Boys',100,50,'Raghav Mishra','Pranav Mahajan','6742398462','apranav@gmail.com'),(112,' Hostel G','Boys',200,150,'Sushant Varkey','Govind Jhaveri','9250858200','ggovind@gmail.com'),(120,' Hostel B','Boys',150,100,'Varun Sharma','Aarif Karnik','9425963995','baarik@gmail.com'),(124,' Hostel E','Boys',120,180,'Kartik Bail','Baldev Joshi','9669783956','ebaldev@gmail.com'),(131,' Hostel C','Girls',150,100,'Naresh Sangha','Amir Tripathi','8008114560','camir@gmail.com'),(164,' Hostel J','Boys',100,150,'Bharat Mangal','Aatif Wadhwa','9687476288','jaatif@gmail.com'),(165,' Hostel D','Girls',100,100,'Jagdish Kothari','Darpan Bajwa','8980451660','ddarpan@gmail.com'),(246,' Hostel H','Girls',150,150,'Bishnu Mangal','Biren Saxena','8085369461','hbiren@gmail.com'),(254,' Hostel I','Boys',150,100,'Samir Grover','Dhanush Sen','9000730267','idhanush@gmail.com'),(278,' Hostel F','Girls',100,100,'Anees Balan','Ratan Sani','8751568513','fratan@gmail.com');
 /*!40000 ALTER TABLE `hostel` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -58,4 +59,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-10 10:36:27
+-- Dump completed on 2022-05-12 11:21:05
