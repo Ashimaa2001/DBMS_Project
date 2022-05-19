@@ -27,11 +27,14 @@ DROP TABLE IF EXISTS `staff`;
 CREATE TABLE `staff` (
   `Name` varchar(20) DEFAULT NULL,
   `Designation` varchar(20) DEFAULT NULL,
+  `Hostel_id` int DEFAULT NULL,
   `Shift` varchar(20) DEFAULT NULL,
-  `Phone_No` int NOT NULL,
+  `Phone_No` bigint DEFAULT NULL,
   `Email_id` varchar(20) NOT NULL,
   `Salary` float DEFAULT NULL,
-  PRIMARY KEY (`Email_id`)
+  PRIMARY KEY (`Email_id`),
+  KEY `fk1` (`Hostel_id`),
+  CONSTRAINT `fk1` FOREIGN KEY (`Hostel_id`) REFERENCES `hostel` (`Hostel_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -41,6 +44,7 @@ CREATE TABLE `staff` (
 
 LOCK TABLES `staff` WRITE;
 /*!40000 ALTER TABLE `staff` DISABLE KEYS */;
+INSERT INTO `staff` VALUES ('Anirudh','Janitor',101,'Morning',9811566400,'anirudh1@thapar.edu',10000),('Jashan','Electrician',112,'Afternoon',9811566403,'jashan@thapar.edu',15000),('Raman','Carpenter',120,'Morning',9811566405,'raman@thapar.edu',12000);
 /*!40000 ALTER TABLE `staff` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -53,4 +57,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-05-10 10:36:27
+-- Dump completed on 2022-05-20  0:07:49
