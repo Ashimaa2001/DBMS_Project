@@ -1,7 +1,7 @@
 # Practice
 
 ## EER diagram
-![image](https://user-images.githubusercontent.com/92039529/169282988-30dcd237-9602-49b2-a7ae-db5fe77e9a84.png)
+![image](https://user-images.githubusercontent.com/92039529/169375019-4c5236c7-927e-463a-847f-4a0eb1696520.png)
 
 ## List of tables-
 ![image](https://user-images.githubusercontent.com/92039529/168000296-ef6322d2-8b9f-4d2d-b08d-c0c6db1ce680.png)
