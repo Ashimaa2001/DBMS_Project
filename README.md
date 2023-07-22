@@ -1,29 +1,47 @@
-# Practice
+# Hostel Management System
+
+The Hostel Management System project aims to simplify and streamline hostel management processes by providing an efficient database management system. It offers a convenient alternative to manual entry in registers and record systems, ensuring smooth operations for hostel administrators and students alike.
+
+<ins>Project Overview</ins>
+
+The primary purpose of this project is to replace traditional manual record-keeping with a more straightforward and robust database management system. By using this system, hostel administrators can efficiently maintain records of students, room allocations, and payment dues, among other essential hostel management data.
+
+<ins>Functionality</ins>
+
+The project provides the following essential functionalities:
+
+- Database of Students: Keeps track of student details, including room number, course name, semester, and fees status.
+
+- Room Allocation: Manages room allocation for students.
+
+- Payment Management: Stores payment-related details of the students, enabling efficient tracking of dues.
+
+- Complaint Management: Records and manages complaints and fine details for students.
+
+<ins>MySQL Tables Used</ins>
+
+The project uses the following MySQL tables:
+
+- complain: Stores complaints and fine details for students.
+- hostel: Represents each hostel and its relationship with students and rooms.
+- login: Manages login credentials for authorized access.
+- payment: Stores payment-related details of the students.
+- rooms: Represents rooms and their relationship with hostels and students.
+- staff: Represents staff members managing hostels and their relationship with hostels.
 
 ## EER diagram
 ![image](https://user-images.githubusercontent.com/92039529/169375019-4c5236c7-927e-463a-847f-4a0eb1696520.png)
 
-## List of tables-
-![image](https://user-images.githubusercontent.com/92039529/168000296-ef6322d2-8b9f-4d2d-b08d-c0c6db1ce680.png)
+<ins>Normalization</ins>
 
-## Login table-
-![image](https://user-images.githubusercontent.com/92039529/169283419-e13c02e5-e073-468c-96b5-2a546b097906.png)
+To ensure data integrity and efficiency, the project applies three levels of normalization to the database schema.
 
-## Hostel table-
-![image](https://user-images.githubusercontent.com/92039529/169283474-7b12302f-ddd5-491c-b045-cac56270c970.png)
+<ins>Additional Features</ins>
 
-## Student table-
-![image](https://user-images.githubusercontent.com/92039529/169283551-511b9c84-7abf-4cc5-83ef-a52be6eb9ef9.png)
+- Implicit Cursor: Used for updating records and indicates if the update was unsuccessful.
+- Explicit Cursor: Implemented for selecting students with dues involved.
+- Triggers: Prevents operations on the payment table on Sundays and after the Due Date.
+- Exception Handling: Includes error handling for cases such as no data found and value errors.
 
-## Staff table-
-![image](https://user-images.githubusercontent.com/92039529/169283649-ab239b86-2f35-46a2-afe5-e9a7eccdb7e0.png)
-
-## Complaint table-
-![image](https://user-images.githubusercontent.com/92039529/169283721-5f2750e5-90f8-414b-87dc-be186832213c.png)
-
-## Payment table-
-![image](https://user-images.githubusercontent.com/92039529/169283779-e456c02b-2813-42a9-a608-f123e7db53cf.png)
-
-## Rooms table
-![image](https://user-images.githubusercontent.com/92039529/169283835-8897d9c2-e825-4529-8495-a29eba53f087.png)
+By using this Hostel Management System, institutions can simplify their hostel management tasks, improve accuracy, and enhance overall efficiency.
 
